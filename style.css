@@ -130,4 +130,9 @@ body {
     font-size: 18px;
     width: 100%;
   }
+  .page-title {
+    position: relative;
+    height: 10%;
+    width: 50%;
+  }
 }

@@ -6,46 +6,48 @@ body {
   margin: 0;
 }
 
+.grid {
+  display: grid;
+}
 .flex {
   display: flex;
 }
 
-main {
+.main-container {
   transform: translate(-50%, 15%);
   /* background-color: red; */
   position: absolute;
-  height: 80vh;
+  height: 70vh;
   right: 50%;
   width: 75%;
   left: 50%;
+  grid-template-columns: 50% auto;
 }
 
 .main-img-con {
   /* background-color: royalblue; */
   height: 100%;
-  width: 50%;
+  width: 100%;
   align-items: center;
 }
 .main-img {
-  /* background-color: rebeccapurple; */
-  background-image: url(/images/Scarecrow.png);
+  height: 85%;
+  width: 100%;
+  background-image: url("/images/Scarecrow.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80%;
-  width: 100%;
 }
 
 .main-text-con {
   /* background-color: yellow; */
   align-items: center;
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 .main-text {
   /* background-color: green; */
-  height: 80%;
+  height: 85%;
   width: 100%;
-  margin-left: 20px;
   font-family: "Space Mono", monospace;
 }
 

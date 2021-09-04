@@ -33,15 +33,19 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your Solution?
+
   OF CAUSE!!! 😄 https://404-not-found-master-one.vercel.app/
 
 - What was your experience?
+
   Was a bit unsure how to start and i but the more i continued ,the more everything made sense and eventually came together.
 
 - What have you learned/improved?
+
   Learned about media queries and incorporated git branches when adding important elements or fixing code (my favorite part actually )
 
 - Your wisdom? :)
+
   IT DOESN'T HAVE TO BE PERFECT, JUST COMPLETE IT!!! 😅
 
 ## Features

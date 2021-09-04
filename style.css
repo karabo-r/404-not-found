@@ -13,6 +13,22 @@ body {
   display: flex;
 }
 
+.page-title {
+  font-family: Inconsolata, monospace;
+  font-weight: 700;
+  height: 10%;
+  margin-top: 1%;
+  margin-left: 5%;
+  position: absolute;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  word-spacing: -5px;
+}
+
+.page-title > h1 {
+  font-size: 26px;
+}
+
 .main-container {
   transform: translate(-50%, 15%);
   /* background-color: red; */

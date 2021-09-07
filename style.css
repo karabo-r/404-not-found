@@ -1,138 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
 
 body {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-
-.grid {
-  display: grid;
-}
-.flex {
-  display: flex;
 }
 
 .page-title {
   font-family: Inconsolata, monospace;
-  font-weight: 700;
-  height: 10%;
-  margin-top: 1%;
-  margin-left: 5%;
-  position: absolute;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  word-spacing: -5px;
+  transform: translateY(-80px);
+  margin-left: 3%;
 }
 
 .page-title > h1 {
+  font-family: Inconsolata, monospace;
+  font-weight: 700;
   font-size: 26px;
 }
 
-.main-container {
-  /* background-color: red; */
+main {
+  align-items: center;
   position: absolute;
-  height: 80vh;
-  width: 75%;
-}
-
-.main-img-con {
-  /* background-color: royalblue; */
-  height: 100%;
-  width: 100%;
-  align-items: center;
-}
-.main-img {
-  height: 85%;
-  width: 100%;
-  background-image: url("/images/Scarecrow.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.main-text-con {
-  /* background-color: yellow; */
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.main-text {
-  /* background-color: green; */
-  height: 85%;
-  width: 100%;
-  font-family: "Space Mono", monospace;
-}
-
-.main-text > h1 {
-  font-family: 700;
-  font-size: 60px;
-  color: #333333;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.main-text > p {
-  font-family: 400;
-  font-size: 24px;
+  display: flex;
+  height: 80%;
   width: 70%;
-  margin-top: 25px;
-  margin-bottom: 60px;
 }
 
-.main-text > button {
+.image {
+  background-image: url("/images/Scarecrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70%;
+  width: 50%;
+}
+
+.text-con {
+  font-family: "Space Mono", monospace;
+  height: 100%;
+  width: 50%;
+}
+
+.text-con > button,
+h1,
+p {
+  margin-left: 20px;
+  transform: translateY(80px);
+}
+
+.text-con > h1 {
+  font-size: 40px;
+}
+
+.text-con > p {
+  font-size: 24px;
+}
+
+button {
+  transform: translateY(100px) !important;
   background-color: #333333;
-  width: 216px;
-  height: 68px;
+  border-radius: 5px;
   color: #ffffff;
-  border: none;
   cursor: pointer;
-  text-transform: uppercase;
   font-size: 14px;
+  width: 200px;
+  height: 68px;
+  border: none;
+}
+button:hover {
+  background-color: #333333d5;
 }
 
-/* Desktop display added so it be overidden later on */
 @media screen and (min-width: 500px) {
-  .main-container {
-    grid-template-columns: 50% auto;
-    transform: translate(-50%, 15%);
-    right: 50%;
-    left: 50%;
+  body {
+    padding: 20px;
+  }
+
+  main {
+    transform: translatex(20%);
   }
 }
 
-/* Mobile display */
+/* Mobile displays */
 @media screen and (max-width: 500px) {
-  .main-container {
-    grid-template-rows: 39% auto;
-    height: 100vh;
+  .page-title {
+    margin-bottom: 7%;
+  }
+
+  main {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image {
+    margin: auto;
+    width: 80%;
+    height: 40%;
+  }
+
+  .text-con {
     width: 100%;
   }
 
-  .main-img-con {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    transform: translatex(7%);
+  .text-con > p {
+    font-size: 17px;
   }
-  .main-text-con {
-    width: 100%;
-    margin: auto;
+
+  .text-con > h1,
+  p {
+    transform: translateY(-20px);
   }
-  .main-text {
-    margin-right: 12px;
-    margin-left: 12px;
-  }
-  .main-text > h1 {
-    margin-top: -20px;
-    font-size: 48px;
-  }
-  .main-text > p {
-    font-size: 18px;
-    width: 100%;
-  }
-  .page-title {
-    position: relative;
-    height: 10%;
-    width: 50%;
+
+  button {
+    transform: translateY(20px) !important;
   }
 }

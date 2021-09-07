@@ -62,3 +62,38 @@ button {
   height: 68px;
   border: none;
 }
+
+@media screen and (max-width: 500px) {
+  .page-title {
+    margin-left: -4%;
+  }
+
+  main {
+    transform: translate(-5.3%);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image {
+    margin: auto;
+    width: 80%;
+    height: 40%;
+  }
+
+  .text-con {
+    width: 100%;
+  }
+
+  .text-con > p {
+    font-size: 17px;
+  }
+  .text-con > h1,
+  p {
+    transform: translateY(-20px);
+  }
+
+  button {
+    transform: translateY(20px) !important;
+  }
+}

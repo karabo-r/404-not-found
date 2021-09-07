@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
 
 body {
-  padding: 20px;
   margin: 0;
 }
 
@@ -12,11 +11,12 @@ body {
 }
 
 .page-title > h1 {
+  font-family: Inconsolata, monospace;
+  font-weight: 700;
   font-size: 26px;
 }
 
 main {
-  transform: translatex(20%);
   align-items: center;
   position: absolute;
   display: flex;
@@ -56,20 +56,35 @@ p {
 button {
   transform: translateY(100px) !important;
   background-color: #333333;
+  border-radius: 5px;
   color: #ffffff;
+  cursor: pointer;
   font-size: 14px;
   width: 200px;
   height: 68px;
   border: none;
 }
+button:hover {
+  background-color: #333333d5;
+}
 
-@media screen and (max-width: 500px) {
-  .page-title {
-    margin-left: -4%;
+@media screen and (min-width: 500px) {
+  body {
+    padding: 20px;
   }
 
   main {
-    transform: translate(-5.3%);
+    transform: translatex(20%);
+  }
+}
+
+/* Mobile displays */
+@media screen and (max-width: 500px) {
+  .page-title {
+    margin-bottom: 7%;
+  }
+
+  main {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -88,6 +103,7 @@ button {
   .text-con > p {
     font-size: 17px;
   }
+
   .text-con > h1,
   p {
     transform: translateY(-20px);
